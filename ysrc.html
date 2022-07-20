@@ -3,56 +3,38 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Home Page</title>
+    <title>Ts Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="navbar.css">
     <style>
-       .h2{
+        .h2{
         text-decoration-line: underline;
         text-decoration-color: red;
         text-decoration-thickness:3px;
        }
-       #tmain{
+         #tmain{
         width: 70%;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap:20px;
         margin:auto;
-        cursor: pointer;
        }
        #tmain>div:nth-child(1) img{
-        width:500px;
-        height: 350px
+        width: 700px;
        }
-       #tmain>div{
+       #tmain>div:nth-child(1){
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
        }
-       #tmain>div:nth-child(1) ul{
-        font-weight: bold;
+       #tmain>div:nth-child(1) p{
+        font-size: 20px;
        }
-       #tmain>div:nth-child(2)>div{
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
-    #tmain>div:nth-child(3)>div{
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
-       #tmain>div:nth-child(2){
-        margin-top: 60px;
+          #tmain>div:nth-child(2){
+        font-size: 10px;
        }
        #tmain>div:nth-child(2)>div{
         display: flex;
        }
        #tmain>div:nth-child(2)>div img{
-        width:40%;
-        margin:10px 20px;
-       }
-       #tmain>div:nth-child(3){
-        font-size: 10px;
-       }
-       #tmain>div:nth-child(3)>div{
-        display: flex;
-       }
-       #tmain>div:nth-child(3)>div img{
         width:40%;
         height: 80px;
         margin:10px 20px;
@@ -93,93 +75,18 @@
     </div>
     <hr>
     <div id="tmain">
-        <div >
-            <div class="h2"><h2>TOP STORIES</h2></div>
-            <div id="ts">
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g6o95rtajoannlo6lhk6suq9v4-20220719221830.jpeg" alt="">;
-                <h2>TS blames Polavaram project for floods, triggers row with AP</h2>
-                <p>TRS leaders demanded a reduction in the height of the Polavaram project, accused the AP government of changing the original plan </p>
-               <ul type="square">
-                <li>Godavari recedes at Bhadrachalam, Puvvada blames Polavaram for delayed outflow</li>
-                <li>KCR rolls out Rs 1000 crore relief plan to protect Bhadrachalam</li>
-               </ul>
-            </div>
-            <div id="ycr">
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g6o95rtajoannlo6lhk6suq9v4-20220719215653.jpeg" alt="">
-                <h2>YSRC GOVERNMENT TO PROVIDE WELFARE SCHEMES TWICE PER ANNUM TO ELIGIBLE: CM JAGAN</h2>
-                <p>CM Jagan provided fresh pensions, Arogyasri facility and ration cards to 3.10 lakh families </p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-6j71bic83ja5c39ctcba4umt26-20220720103319.jpeg" alt="">
-                <h2>VOTING BEGINS TO ELECT SRI LANKA'S NEW PRESIDENT IN THREE-CORNERE CONTEST</h2>
-                <p> A candidate has to cross the magical figure of 113 in the 225-member House to win the election </p>
-                <ul type="square">
-                    <li>India says Sri Lanka crisis severe, no spillover</li>
-                    <li> State of emergency declared in Sri Lanka ahead of July 20
-                        presidential election</li>
-                </ul>
-            </div>
-        </div>
         <div>
-            <div id="metro">
-                <img  src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j15mcnf32f7gu48su2lggkb982-20180610012723.jpeg">
-                <p>VLOGGER'S METRO DANCE GOES VIRAL</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g6o95rtajoannlo6lhk6suq9v4-20220720010932.jpeg" alt="">
-                <p>TAMILISAI TAKES A DIG AT KCR, SAYS WILL NOT ALLOW CLOUDBURST IN
-                    PUDUCHERRY</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g6o95rtajoannlo6lhk6suq9v4-20220720012324.jpeg" alt="">
-                <p>CASTE ROW HITS AGNIPATH, CENTRE DENIES</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-up9eqh7f5sg0ifc8b4jfvddnm1-20210717133803.jpeg" alt="">
-                <p>KERALA ISSUES SOP FOR TREATMENT, ISOLATION OF MONKEYPOX CASES</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-dakadn436re6pjq269b9cu6f65-20220701220940.jpeg" alt="">
-                <p>SC GIVES INTERIM PROTECTION FROM ARREST TO NUPUR SHARMA TILL AUG 10
-                    Supreme Court (PTI)</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-l6dg9n8eu57h7ovuma9guod0t7-20211007095056.jpeg" alt="">
-                <p>SUPREME COURT TRANSFERS PLEAS CHALLENGING AGNIPATH SCHEME TO DELHI HC</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g6o95rtajoannlo6lhk6suq9v4-20220720002339.jpeg" alt="">
-                <p>GST HIKE SETS OFF RUCKUS IN LOK SABHA</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g6o95rtajoannlo6lhk6suq9v4-20220720000715.jpeg" alt="">
-                <p>TS NEW SECRETARIAT COMPLEX INAUGURATION TO BE DEFERRED TO DEC</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kn1bvj680of26ctpj199rgi5p4-20220716094450.jpeg" alt="">
-                <p>HIGH-POWERED CENTRAL TEAM TO VISIT TELANGANA, ASSESS FLOOD DAMAGE</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-75e16o62k8n08ro7n9nn9eh9d3-20220715093005.jpeg" alt="">
-                <p>RAINS, SUBSEQUENT DAMAGES BRING POOR UPKEEP OF KADEM DAM TO FORE</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-o7jeshd5qb27bd6t4srl39slk7-20211117004954.jpeg" alt="">
-                <p>HC WANTS AP TO CLARIFY ON KHAKI FOR MAHILA KARYADARSIS AS POLICE</p>
-            </div>
-            <div>
-                <img src="https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-e1f67n3hq6qnulfne3rjlk78r5-20160502172936.jpeg" alt="">
-                <p>NGT ORDERS ACTION AGAINST ILLICIT AQUACULTURE, MINING</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qtvqos3f6qirnki2eqd1o1sht6-20211012223114.jpeg" alt="">
-                <p>VILLAGES IN KONASEEMA GROPING IN DARK</p>
-            </div>
-            <div>
-                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-l6o38mujb9otamuacsgrslv792-20220513003251.jpeg" alt="">
-                <p>STONE FOR RAMAYAPATNAM PORT TO BE LAID TODAY</p>
-            </div>
-            
+         <h1>YSRC government to provide welfare schemes twice per annum to eligible: CM Jagan</h1>
+        <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g6o95rtajoannlo6lhk6suq9v4-20220719215653.Medi.jpeg" alt="">
+       <p>VIJAYAWADA: Chief Minister Jagan Reddy on Tuesday credited Rs 137 crore into the accounts of 3,39,096 beneficiaries who had been left out of the welfare schemes. He provided fresh pensions, Arogyasri facility and ration cards to 3.10 lakh families.</p>
+       <p>The chief minister said his government is committed to the welfare of the poor. “We took this initiative to reach benefits of the welfare schemes to those who are eligible and have not yet availed the benefits, given twice every year,” he said.</p>
+       <p>He pointed out that the benefits of these schemes are being delivered right at the doorsteps of the beneficiaries.</p>
+       <p>As many as 2,99,085 new beneficiaries were added to YSR Pension Kanuka, while 7051 are getting Ration Cards and 3035 are being provided with Arogyasri Cards under the present initiative. For this, an additional expenditure of Rs 935 crore shall be borne by the state government, he said.</p>
+       <p>The CM reiterated that the government is implementing every scheme with utmost responsibility and in a transparent manner without any discrimination.</p>
+       <p>He said the previous government of TD had tried to minimise the number of beneficiaries of welfare schemes by extending it only to a select few people through Janmabhoomi Committees.</p>
+       <p>Terming his government as the people’s government, Jagan said the benefits are now given irrespective of the beneficiaries’ caste, religion, or political affiliation.</p>
+       <p>The CM said his government could confidently go to each beneficiary’s house under the Gadapa Gadapaki Mana Prabhuthvam programme because of its good governance of the state in the last three years.</p>
+       <p>Ministers Budi Mutyalanaidu, Adimulapu Suresh and Nageswara Rao, chief secretary Sameer Sharma and other officials were present. </p>
         </div>
         <div>
             <div class="h2"><h2 style="font-size:22px;">MOST POPULAR</h2></div>
@@ -229,20 +136,8 @@
 </body>
 </html>
 <script>
-    document.querySelector("#ts").addEventListener("click",load)
-function load(){
-    window.location.href="ts.html"
-}
-document.querySelector("#home").addEventListener("click",ho)
+    document.querySelector("#home").addEventListener("click",ho)
 function ho(){
     window.location.href="index.html"
-}
-document.querySelector("#metro").addEventListener("click",mt)
-function mt(){
-    window.location.href="metro.html"
-}
-document.querySelector("#ycr").addEventListener("click",yc)
-function yc(){
-    window.location.href="ysrc.html"
 }
 </script>
