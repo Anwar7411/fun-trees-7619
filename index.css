@@ -1,0 +1,83 @@
+.h2{
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness:3px;
+   }
+   #tmain{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin:auto;
+    cursor: pointer;
+   }
+   #tmain>div:nth-child(1) img{
+    width:500px;
+    height: 350px
+   }
+   #tmain>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   }
+   #tmain>div:nth-child(1) ul{
+    font-weight: bold;
+   }
+   #tmain>div:nth-child(2)>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#tmain>div:nth-child(3)>div{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+   #tmain>div:nth-child(2){
+    margin-top: 60px;
+   }
+   #tmain>div:nth-child(2)>div{
+    display: flex;
+   }
+   #tmain>div:nth-child(2)>div img{
+    width:40%;
+    margin:10px 20px;
+   }
+   #tmain>div:nth-child(3){
+    font-size: 10px;
+   }
+   #tmain>div:nth-child(3)>div{
+    display: flex;
+   }
+   #tmain>div:nth-child(3)>div img{
+    width:40%;
+    height: 80px;
+    margin:10px 20px;
+   }
+   #south{
+    width: 70%;
+    margin:auto;
+    cursor: pointer;
+   }
+   #south>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+   }
+   #south>div h3{
+    margin-top: 0px;
+    font-size: 15px;
+   }
+   #south>div:nth-child(2) img{
+      width:280px
+   }
+   #south>div:nth-child(2){
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   }
+   #south>div:nth-child(3){
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   }
+   #south>div:nth-child(3) img{
+    width:100px;
+    height:80px;
+   }
+   #south>div:nth-child(3)>div{
+    display: flex;
+   }
+   #south>div:nth-child(3) h3{
+    margin-left: 20px;
+   }
