@@ -2,7 +2,7 @@ document.querySelector("#ts").addEventListener("click",load)
 function load(){
     window.location.href="ts.html"
 }
-document.getElementBYId("home").addEventListener("click",ho)
+document.querySelector("#home").addEventListener("click",ho)
 function ho(){
     window.location.href="index.html"
 }
