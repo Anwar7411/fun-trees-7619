@@ -1,0 +1,22 @@
+document.querySelector("#ts").addEventListener("click",load)
+function load(){
+    window.location.href="ts.html"
+}
+document.getElementBYId("home").addEventListener("click",ho)
+function ho(){
+    window.location.href="index.html"
+}
+document.querySelector("#metro").addEventListener("click",mt)
+function mt(){
+    window.location.href="metro.html"
+}
+document.querySelector("#ycr").addEventListener("click",yc)
+function yc(){
+    window.location.href="ysrc.html"
+}
+document.querySelector("#prat").addEventListener("click",function(){
+    window.location.href="pratap.html"
+})
+document.querySelector("#nation").addEventListener("click",function(){
+    window.location.href="Nation.html"
+})
