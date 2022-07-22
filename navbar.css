@@ -43,9 +43,19 @@
     background-color: black;
     margin: auto;
 }
-hr{
+#hr{
     width:70%;
     margin-top: -10px;
+}
+#topnav{
+    margin-top: 6px;
+    margin-right: 10px;
+}
+#topnav>div{
+    width: 25px;
+  height: 5px;
+  background-color: white;
+  margin: 4px;
 }
 #heading{
     width:70%;
@@ -64,4 +74,16 @@ hr{
 }
 #heading p{
 font-size: 20px ;
+}
+#heading>p:hover,#heading>p:active{
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness:3px;
+    background-color: rgba(189, 195, 199, 1 );
+}
+hr{
+    width: 70%;
+    padding: 1px;
+    background-color: black;
+    margin-top: 50px;
 }
