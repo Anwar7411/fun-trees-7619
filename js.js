@@ -4,7 +4,7 @@ function load(){
 }
 document.querySelector("#home").addEventListener("click",ho)
 function ho(){
-    window.location.href="index.html"
+    window.location.href="home.html"
 }
 document.querySelector("#metro").addEventListener("click",mt)
 function mt(){
