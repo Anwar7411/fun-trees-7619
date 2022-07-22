@@ -3,47 +3,19 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ts Page</title>
+    <title>Home Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="navbar.css">
-    <style>
-        .h2{
-        text-decoration-line: underline;
-        text-decoration-color: red;
-        text-decoration-thickness:3px;
-       }
-         #tmain{
-        width: 70%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:20px;
-        margin:auto;
-       }
-       #tmain>div:nth-child(1) img{
-        width: 700px;
-       }
-       #tmain>div:nth-child(1){
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-       }
-       #tmain>div:nth-child(1) p{
-        font-size: 20px;
-       }
-          #tmain>div:nth-child(2){
-        font-size: 10px;
-       }
-       #tmain>div:nth-child(2)>div{
-        display: flex;
-       }
-       #tmain>div:nth-child(2)>div img{
-        width:40%;
-        height: 80px;
-        margin:10px 20px;
-       }
-    </style>
+   <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="navbar">
         <div>
+            <div id="topnav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <h3>e-Paper</h3>
             <div></div>
             <img src="data:image/jpeg;base64,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">
@@ -75,21 +47,64 @@
     </div>
     <hr id="hr">
     <div id="tmain">
+        <div >
+            <div class="h2"><h2>SOUTH</h2></div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0pllog7molapmv4d1o01pkbeh2-20220721132616.jpeg" alt="">;
+                <h2>GREEN ACTIVISTS FLAY KARNATAKA POLITICIANS' STANCE ON WESTERN GHATS
+                    ESA</h2>
+                <p>The Union government recently issued a draft notification regarding
+                    the identification and declaration of ESA in Western Ghats </p>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-hicqudhm2rl3a5t6ahnlga6bl1-20210918130940.jpeg" alt="">
+                <h2>KERALA-CENTRE FACE-OFF ON GST: FM SAYS NO TAX SHOULD BE LEVIED ON</h2>
+                <p>Reiterating his opposition to levying GST on daily use items,
+                    Balagopal made it clear that 'tax should not be levied on items of
+                    common man' </p>
+            </div>
+        </div>
         <div>
-         <h1>Hero of another era: Remembering Prathap Pothen</h1>
-        <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.Medi.jpeg" alt="">
-       <p>I wonder if actor Prathap Pothen, who passed away on Friday, would have become that popular celluloid hero that he was in his heyday if he were to make a debut today. Would he have fitted into the frames of most modern blockbusters that have so much blood and gore? So if Pothen was loved by the film-goers of those times, the halcyon days of Tamil cinema, it was because a spate of movies, tugging at the viewers’ hearts and tickling their brains, were being made by a generation of directors at one point of time. It was the phase after Kollywood came out of the stranglehold of the two legendary titans, M G Ramachandran and Sivaji Ganesan, who had enthralled the audience with their kind of films.</p>
-       <p>Though I am not sure of the first Pothen film that I saw, my guess is that it was Azhiayatha Kolangal (Inerasable Patterns), which had so many things to remember. Despite being a takeoff on a 1971 Hollywood film, Summer of ‘42, which I knew much later, when Azhiyatha Kolangal hit the screens, it was a sensation. Not due to Pothen, whose endearing short presence on screen was undoubtedly impressive, but because the heroine was another extremely talented actress, the late Shobha, and the director and cinematographer was the late Balu Mahendra. Tamil film goers went gaga over visuals capturing the rustic charm of the village, in which the coming of age film was set.</p>
-       <p>Another memorable film of Pothen was ‘Moodupani’ (Mist), again featuring Shobha as the lead actress and Balu Mahendra holding the megaphone and the camera. That too was again inspired by an old Alfred Hitchcock thriller Psycho. But for me or any other Tamil movie goer of the time, the visuals and story line were out of the ordinary. So Pothen, sort of endeared himself to many like me for whom cinema in those days was the prime entertainment. He was the man next door who breezed into the film industry as a whiff of fresh air with his suave demeanour and intellectual aura, oozing with thespian talents.</p>
-       <p>Personally, he was the only film star I have met and interacted with before I became a journalist. He was brought to meet us, students of journalism and mass communication, by one of our guest lecturers, the late Mithram Devanesan, a leading theatre personality in Chennai at that time and a friend of Pothen. That was soon after the release of his first directorial venture, Meendum Oru Kathal Kathai, a revolutionary story on romance and marriage of two mentally challenged persons. The film, in which he also played the lead role, won critical acclaim for both his acting as well as directorial skills but Pothen, while interacting with us, was humility personified. He spent a lot of time answering our questions on cinema and film making.</p>
-       <p>However, about four years prior to that classroom meeting, Pothen had floored me by essaying the role of a student in love with his female lecturer in the Malayalam film ‘Chamaram.’ The film directed by the late Bharathan created a sensation across campuses, particularly co-ed colleges where women lecturers taught men. I, too, was then a student of a co-ed college. But I wonder if a movie like that could be made in the present day social milieu, in which people are too sensitive to such culture shocks and no one knows what hurts whom. Anyway, in 1980, Pothen pulled it off with aplomb and won the hearts of many students, particularly those who were taught by women teachers.</p>
-       <p>As a responsible teacher, driving sense into the heads of a pair of adolescent lovers trying to elope from a public school, Pothen appeared in the film ‘Panneer Pushpangal,’ another beautiful love story that unfolded on the screens in those times. That was also a film character that was widely discussed as he taught us how an ideal teacher should be to his students, thus making an impression on me in those student days when we generally resented the behavior and attitude of our teachers.</p>
-       <p>Another celluloid fare of that era that featured Pothen and was glowingly spoken about was ‘Nenjathi Killathey’ (Don’t pinch my heart), a slow-moving beautifully narrated story by the late Mahendran, who had once said that he developed the storyline after seeing a woman jogging one fine morning while he looked out of his hotel window in Mumbai and wondered if she would able to continue her exercise after marriage. Pothen played his part as a photographer with elan.</p>
-       <p>All such vignettes are still fresh in my mind since I was an ardent movie-goer as a student. Those matinees in the darkened cavernous cinema halls were far more exciting than the stifling confines of the laboratory or the post-lunch sleep-inducing lectures. But my interest in films waned slowly and I rarely went to watch them as years passed. But Pothen continued to travel in his chosen path and it crossed with mine at times. He was featured in the film Bangalore Days (2013) that I watched and then he came as the judge in the 2020 OTT offering, ‘Ponmagal Vandhal.’ Most of those who drew our attention through films in those years faded away from the limelight. Also I have to prefix the ‘late’ to the many names referred to in this column. It is sad Pothen joined them all so early.</p>
+            <div>
+                <img  src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-aliu91bhus1dvcfqko2hvehl11-20220720231257.jpeg">
+                <p>AP FACES BIG CHALLENGE TO PROVIDE HEALTHCARE TO FLOOD-HIT PEOPLE</p>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-e6nq7fbthpd675mthhet7a7vh5-20220720225005.jpeg" alt="">
+                <p>ANDHRA PRADESH WILL HAVE 4 MORE PORTS AND 9 FISHING HARBOURS SOON: CM</p>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-up9eqh7f5sg0ifc8b4jfvddnm1-20210717133803.jpeg" alt="">
+                <p>KERALA ISSUES SOP FOR TREATMENT, ISOLATION OF MONKEYPOX CASES</p>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-r8pdp9ot3af7v76mtg31eab2s6-20220714071834.jpeg" alt="">
+                <p>TELANGANA FLOOD LOSS AT RS 1,400 CR</p>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kmtq7ogjn1u3ppuq6h03tm3lt4-20190517022548.jpeg" alt="">
+                <p>TELANGANA AMONG TOP 10 START-UP JOB CREATORS</p>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-okb4hm6shnhc93fpbg7ovqvqv0-20220219133451.jpeg" alt="">
+                <p>SC TO AP: RETURN RS 1,100 CRORE FROM PD ACCOUNT TO SDRF</p>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mokfgtfmsk3bpc9jfeouuk4a35-20220719070540.jpeg" alt="">
+                <p>TWO TRS MLAS SKIP VOTING IN PREZ POLL; PARTIES SAY NO DEVIATION</p>
+            </div>
+            <div>
+                <img src="https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-20160118121135.png" alt="">
+                <p>POWER TARIFF HIKE ON THE CARDS FOR TAMIL NADU</p>
+            </div>   
+            <div>
+                <img src="https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-e1f67n3hq6qnulfne3rjlk78r5-20160502172936.jpeg" alt="">
+                <p>NGT ORDERS ACTION AGAINST ILLICIT AQUACULTURE, MINING</p>
+            </div>
         </div>
         <div>
             <div class="h2"><h2 style="font-size:22px;">MOST POPULAR</h2></div>
-            <div>
+            <div id="prat">
                 <h2>HERO OF ANOTHER ERA: REMEMBERING PRATHAP POTHEN</h2>
                 <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg" alt="">
             </div>
@@ -131,6 +146,164 @@
                 <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0fr7ofu4cef9a2dbis2tuej3p1-20161209024602.jpeg" alt="">
             </div>
         </div>
+    </div>
+    <div id="south">
+        <div class="h2"><h2>SOUTH</h2></div>
+        <div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-okb4hm6shnhc93fpbg7ovqvqv0-20220219133451.jpeg" alt="">
+                <h3>SC TO AP: RETURN RS 1,100 CRORE FROM PD ACCOUNT TO SDRF </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mokfgtfmsk3bpc9jfeouuk4a35-20220719070540.jpeg" alt="">
+                <h3>TWO TRS MLAS SKIP VOTING IN PREZ POLL; PARTIES SAY NO DEVIATION </h3>
+            </div>
+            <div>
+                <img src="https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-20160118121135.png" alt="">
+                <h3>POWER TARIFF HIKE ON THE CARDS FOR TAMIL NADU </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/c54036d054c7c8253415ffcdfe34e2a9058cc7a4-tc-img-thumb.jpg" alt="">
+                <h3>2ND MONKEYPOX CASE IN KERALA'S KANNUR </h3>
+            </div>
+        </div>
+       <div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-q0bg65lcdnrp5oi09di2h2ol40-20190910065026.jpeg" alt="">
+            <h3>SPECIALIST DOCTORS CRISIS AILS TELANGANA'S GOVT HOSPITALS</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-hicqudhm2rl3a5t6ahnlga6bl1-20210918130940.jpeg" alt="">
+            <h3>KERALA OPPOSES 5 PER CENT GST ON PRE-PACKED, LABELLED FOOD ITEMS:FINANCE MINISTER</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jk65c6uankploo28262qlv1o72-20170531013452.jpeg" alt="">
+            <h3>TS TO COPY TN, BAN MEDICAL SHOPS NEAR GOVT HOSPITALS</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i1c8dvb1ci2j7id75gjmjdg635-20220710100945.jpeg" alt="">
+            <h3>RAINS FORECAST OVER NORTH COASTAL AP, YANAM</h3>
+        </div>
+       </div>
+    </div>
+    <hr>
+    <div id="ent">
+        <div class="h2"><h2>ENTRAINMENT</h2></div>
+        <div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-9menousp7emifl3109o07s1dq4-20190419004617.jpeg" alt="">
+                <h3>RGV LODGES EXTORTION CASE AGAINST PRODUCER</h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-c7opvlt988b0jb5qa1j4t5dkm5-20220719185658.jpeg" alt="">
+                <h3>RAVI KIRAN KOLA’S NEXT IS A POLITICAL THRILLER</h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-f6e1bi2ma1feadh2mrl9a1ick1-20220708185539.jpeg" alt="">
+                <h3>NAKSHATRA PLAYS A CLASSICAL DANCER IN UNSTOPPABLE</h3>
+            </div>
+        </div>
+       <div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i1c8dvb1ci2j7id75gjmjdg635-20220710094252.jpeg" alt="">
+            <h3>WOMAN ON A MISSION</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-pfoc8fv4csd8elsj3s5mqgbti0-20210912010810.jpeg" alt="">
+            <h3>FILM EXHIBITORS TO MOVE HIGH COURT ON ONLINE TICKET SALES BY
+                GOVERNMENT</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kluk7l8c77ht84pu6rigpn3qh2-20220621213524.jpeg" alt="">
+            <h3>'MEMORIA' IS SENSATIONAL AS IT’S ABOUT THE SENSES: TILDA SWINTON</h3>
+        </div>
+       </div>
+    </div>
+    <hr>
+    <div id="world">
+        <div class="h2"><h2>WORLD</h2></div>
+        <div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0pllog7molapmv4d1o01pkbeh2-20220721071602.jpeg" alt="">
+                <h3>WICKREMESINGHE ELECTED NEW SRI LANKAN PRESIDENT; PROTESTERS DEMAND HIS
+                    RESIGNATION </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-6j71bic83ja5c39ctcba4umt26-20220720103319.jpeg" alt="">
+                <h3>VOTING BEGINS TO ELECT SRI LANKA'S NEW PRESIDENT IN THREE-CORNERED
+                    CONTEST </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mokfgtfmsk3bpc9jfeouuk4a35-20220719111454.jpeg" alt="">
+                <h3>PUTIN HEADS TO TEHRAN FOR TALKS WITH LEADERS OF IRAN, TURKEY </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-2thfk3u23r5jhhoikoeqlh0h04-20220718131004.jpeg" alt="">
+                <h3>STATE OF EMERGENCY DECLARED IN SRI LANKA AHEAD OF JULY 20 PRESIDENTIAL
+                    ELECTION </h3>
+            </div>
+        </div>
+       <div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kn1bvj680of26ctpj199rgi5p4-20220716114850.jpeg" alt="">
+            <h3>SRI LANKAN PARLIAMENT MEETS TO ANNOUNCE PRESIDENT'S VACANCY</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-sbml7pnahj2joliecj72iv1ro3-20220419113753.jpeg" alt="">
+            <h3>SRI LANKA'S PRESIDENT GOTABAYA LEAVES FOR SINGAPORE FROM MALDIVES</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kom2qcfhn3ciao50eiqgbkgtn7-20220713125048.jpeg" alt="">
+            <h3>SRI LANKA DECLARES STATE OF EMERGENCY AFTER PRESIDENT GOTABAYA
+                RAJAPAKSA FLEES</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-67d19jpstj28c245s1i0ikji20-20220712105015.jpeg" alt="">
+            <h3>NEW UK PRIME MINISTER TO BE ANNOUNCED ON SEPTEMBER 5
+                SCIENCE</h3>
+        </div>
+       </div>
+    </div>
+    <hr>
+    <div id="sports">
+        <div class="h2"><h2>SPORTS</h2></div>
+        <div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-4tke49f3u01f4u5mpdim9knv91-20220717132822.jpeg" alt="">
+                <h3>SINDHU CLINCHES SINGAPORE OPEN TITLE, HER THIRD TROPHY OF 2022 </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-g9oj22nlvo6mb1imj0raumtel4-20200417173240.jpeg" alt="">
+                <h3>BCCI PUSH FOR SOURAV, JAY EXTENSION; SC SAYS 'WILL SEE' </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tfvvjg605k774cc039o1ho82t5-20220603234707.jpeg" alt="">
+                <h3>HYDERABAD GEARS UP FOR FORMULA E RACING IN 2023 </h3>
+            </div>
+            <div>
+                <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-rminq6lic303n6o6h5727fsro5-20220509000956.jpeg" alt="">
+                <h3>AGE FRAUD IN SPORTS SELECTION COMES DOWN DRASTICALLY, THANKS TO
+                    TECHNOLOGY</h3>
+            </div>
+        </div>
+       <div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qm5o5uqvq7aj3matql0sleuu36-20220612113422.jpeg" alt="">
+            <h3>HYDERABAD'S RAHUL IS CHESS GRANDMASTER</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tfvvjg605k774cc039o1ho82t5-20220603234707.jpeg" alt="">
+            <h3>HYDERABAD SET FOR FORMULA E DEBUT ON FEBRUARY 11 NEXT YEAR</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-henb2g3thqk5r704vk68t75kb1-20211001085338.jpeg" alt="">
+            <h3>DRONAS GET RAW DEAL IN GIFTS</h3>
+        </div>
+        <div>
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-b5nq5e0ku3g1nctek2tkqtah67-20220601160558.jpeg" alt="">
+            <h3>WORLD'S LARGEST CRICKET JERSEY WAS MADE WITHIN NINE DAYS</h3>
+        </div>
+       </div>
     </div>
 </body>
 </html>
