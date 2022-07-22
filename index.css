@@ -169,3 +169,42 @@
     margin-left: 20px;
     font-size: 11px;
    }
+   #sports{
+      width: 70%;
+      margin:auto;
+      cursor: pointer;
+      margin-bottom: 100px;
+     }
+     #sports>div{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap:30px;
+     }
+     #sports>div h3{
+      margin-top: 0px;
+      font-size: 15px;
+     }
+     #sports>div:nth-child(2) img{
+        width:240px
+     }
+     #sports>div:nth-child(2){
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      
+     }
+     #sports>div:nth-child(3){
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      display: flex;
+      margin-top: 50px;
+     }
+     #sports>div:nth-child(3) img{
+      width:100px;
+      height:60px;
+     }
+     #sports>div:nth-child(3)>div{
+      width:23%;
+      display: flex;
+     }
+     #sports>div:nth-child(3) h3{
+      margin-left: 20px;
+      font-size: 11px;
+     }

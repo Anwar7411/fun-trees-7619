@@ -1,11 +1,14 @@
-document.querySelector("#ts").addEventListener("click",load)
-function load(){
-    window.location.href="ts.html"
-}
+
 document.querySelector("#home").addEventListener("click",ho)
 function ho(){
     window.location.href="home.html"
 }
+document.querySelector("#nation").addEventListener("click",function(){
+    window.location.href="Nation.html"
+})
+document.querySelector("#sou").addEventListener("click",function(){
+    window.location.href="south.html"
+})
 document.querySelector("#metro").addEventListener("click",mt)
 function mt(){
     window.location.href="metro.html"
@@ -17,6 +20,8 @@ function yc(){
 document.querySelector("#prat").addEventListener("click",function(){
     window.location.href="pratap.html"
 })
-document.querySelector("#nation").addEventListener("click",function(){
-    window.location.href="Nation.html"
-})
+document.querySelector("#ts").addEventListener("click",load)
+function load(){
+    window.location.href="ts.html"
+    console.log("hi")
+}
