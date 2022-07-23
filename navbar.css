@@ -87,3 +87,11 @@ hr{
     background-color: black;
     margin-top: 50px;
 }
+#scroll{
+    display: none;
+}
+#scroll img{
+    width: 150px;
+    height: 40px;
+    margin-left: 180px;
+}

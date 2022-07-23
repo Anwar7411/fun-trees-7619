@@ -9,6 +9,12 @@ document.querySelector("#nation").addEventListener("click",function(){
 document.querySelector("#sou").addEventListener("click",function(){
     window.location.href="south.html"
 })
+document.querySelector("#naksha").addEventListener("click",function(){
+    window.location.href="naksha.html"
+})
+document.querySelector("#ap").addEventListener("click",function(){
+    window.location.href="ap.html"
+})
 document.querySelector("#metro").addEventListener("click",mt)
 function mt(){
     window.location.href="metro.html"
